@@ -1,0 +1,42 @@
+[
+  {
+    "id": "API-001",
+    "title": "Bearer auth token validation",
+    "steps": ["GET httpbin.org/bearer with Authorization header"],
+    "expected": "200 response confirms authenticated token",
+    "priority": "P0",
+    "tags": ["api", "auth"]
+  },
+  {
+    "id": "API-002",
+    "title": "CRUD operations on posts",
+    "steps": ["POST, GET, PUT, DELETE jsonplaceholder.typicode.com/posts"],
+    "expected": "All operations return expected status codes",
+    "priority": "P0",
+    "tags": ["api", "crud"]
+  },
+  {
+    "id": "API-003",
+    "title": "404 for unknown resource",
+    "steps": ["GET /posts/999999"],
+    "expected": "404 Not Found",
+    "priority": "P1",
+    "tags": ["api", "error-handling"]
+  },
+  {
+    "id": "API-004",
+    "title": "4xx and 5xx error handling",
+    "steps": ["Request httpbin /status/400 and /status/500"],
+    "expected": "400 and 500 status codes returned",
+    "priority": "P1",
+    "tags": ["api", "error-handling"]
+  },
+  {
+    "id": "API-005",
+    "title": "Post response matches JSON schema",
+    "steps": ["GET /posts/1", "Validate response against schema"],
+    "expected": "Response body matches post schema",
+    "priority": "P1",
+    "tags": ["api", "schema"]
+  }
+]

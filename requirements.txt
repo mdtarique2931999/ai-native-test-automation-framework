@@ -1,0 +1,7 @@
+selenium
+pytest
+requests
+openai
+python-dotenv
+pytest-html
+jsonschema

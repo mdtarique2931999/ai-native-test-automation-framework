@@ -1,0 +1,42 @@
+[
+  {
+    "id": "DASH-001",
+    "title": "Inventory widgets load after login",
+    "steps": ["Login as standard_user", "Wait for inventory items"],
+    "expected": "At least 6 products are visible",
+    "priority": "P0",
+    "tags": ["dashboard", "loading"]
+  },
+  {
+    "id": "DASH-002",
+    "title": "Product data accuracy",
+    "steps": ["Read first product name and price"],
+    "expected": "Sauce Labs Backpack is $29.99",
+    "priority": "P0",
+    "tags": ["dashboard", "data"]
+  },
+  {
+    "id": "DASH-003",
+    "title": "Sort products by price high to low",
+    "steps": ["Select Price (high to low) from sort dropdown"],
+    "expected": "First item price is highest in list",
+    "priority": "P1",
+    "tags": ["dashboard", "sort"]
+  },
+  {
+    "id": "DASH-004",
+    "title": "Responsive layout on mobile viewport",
+    "steps": ["Resize browser to 375x667", "Verify menu and products visible"],
+    "expected": "Inventory remains usable on mobile width",
+    "priority": "P2",
+    "tags": ["dashboard", "responsive"]
+  },
+  {
+    "id": "DASH-005",
+    "title": "Permission-based inventory visibility",
+    "steps": ["Login as standard_user and problem_user", "Compare inventory counts"],
+    "expected": "Both users see the same product catalog",
+    "priority": "P1",
+    "tags": ["dashboard", "permissions"]
+  }
+]

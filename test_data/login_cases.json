@@ -1,0 +1,42 @@
+[
+  {
+    "id": "LOGIN-001",
+    "title": "Valid login with standard_user",
+    "steps": ["Open login page", "Enter standard_user and secret_sauce", "Click Login"],
+    "expected": "User lands on inventory page",
+    "priority": "P0",
+    "tags": ["login", "happy-path"]
+  },
+  {
+    "id": "LOGIN-002",
+    "title": "Invalid credentials show error",
+    "steps": ["Enter wrong username/password", "Click Login"],
+    "expected": "Epic sadface error is shown",
+    "priority": "P0",
+    "tags": ["login", "negative"]
+  },
+  {
+    "id": "LOGIN-003",
+    "title": "Forgot password flow not available",
+    "steps": ["Open login page", "Look for forgot password link"],
+    "expected": "No forgot password link exists on Sauce Demo",
+    "priority": "P2",
+    "tags": ["login", "adapted"]
+  },
+  {
+    "id": "LOGIN-004",
+    "title": "Session expiry redirects to login",
+    "steps": ["Login successfully", "Clear cookies", "Navigate to inventory URL"],
+    "expected": "User is redirected back to login",
+    "priority": "P1",
+    "tags": ["login", "session"]
+  },
+  {
+    "id": "LOGIN-005",
+    "title": "Locked out user cannot login",
+    "steps": ["Login with locked_out_user", "Click Login"],
+    "expected": "Account locked message is displayed",
+    "priority": "P0",
+    "tags": ["login", "security"]
+  }
+]

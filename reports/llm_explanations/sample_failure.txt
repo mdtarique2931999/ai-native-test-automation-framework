@@ -1,0 +1,18 @@
+=== Failure Context ===
+Test: tests/test_sample_failure.py::test_intentional_failure_for_explainer_demo
+Outcome: failed
+Phase: call
+Error:
+AssertionError: Demo failure for Failure Explainer report attachment
+
+=== LLM Explanation ===
+Run `pytest tests/test_sample_failure.py -m sample_failure` with OPENAI_API_KEY set
+to generate a live LLM explanation. This placeholder is committed so reviewers know
+where the output appears after a local run.
+
+Expected output sections:
+1. What likely broke
+2. Why it failed
+3. One concrete fix to try
+
+The explanation is also attached to pytest-html under "LLM Failure Explanation".
