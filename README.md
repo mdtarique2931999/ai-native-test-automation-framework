@@ -1,6 +1,6 @@
-# TestMu SDET-1 Assignment
+# AI-Native Test Automation Framework
 
-AI-native QA framework for **Login**, **Dashboard**, and **REST API** regression coverage, with an LLM-powered **Failure Explainer** wired into pytest reports.
+AI-assisted QA automation framework for Login, Dashboard, and REST API testing, featuring an LLM-powered Failure Explainer integrated with Pytest reports.
 
 ## Stack
 
@@ -69,13 +69,14 @@ When a test fails, the pytest hook in `conftest.py`:
 
 See committed sample output in `reports/llm_explanations/sample_failure.txt`.
 
-## What I'd build next
+
+## Future Enhancements
 
 - Flaky Test Classifier as a second LLM pipeline
 - Playwright migration for faster, more stable UI tests
 - Self-healing locators using LLM-assisted selector recovery
-- TestMu cloud grid execution for CI parallel runs
+- Cloud-based parallel execution for scalable CI test runs
 
 ## Author
-
-Md Tarique — TestMu AI SDET-1 Assessment
+Md Tarique
+QA Automation Engineer
